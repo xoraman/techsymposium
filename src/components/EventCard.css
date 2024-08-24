@@ -1,0 +1,13 @@
+.event-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    text-align: left;
+  }
+  
+  .event-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
