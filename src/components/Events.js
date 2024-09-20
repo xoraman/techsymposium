@@ -20,6 +20,13 @@ const events = [
       fee: '$10',
       description: 'A competition to build and program robots.',
     },
+    {
+      department: 'Mechanical Engineering',
+      name: 'Robotics Competition',
+      image: 'path/to/image.jpg',
+      fee: '$10',
+      description: 'A competition to build and program robots.',
+    },
     // Add more events...
   ];
   

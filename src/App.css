@@ -1,7 +1,13 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 .department {
   margin-bottom: 2rem;
  
+}
+.events{
+  display: flex;
+  flex-wrap: wrap;
 }
