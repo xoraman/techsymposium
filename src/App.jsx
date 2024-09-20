@@ -1,15 +1,15 @@
-// App.js
 import React from 'react';
 import Department from './components/Department';
 import events from './components/Events';
-import BubbleAnimation from './/BubbleAnimation'; // Import the BubbleAnimation component
+import BubbleAnimation from './components/BubbleAnimation'; 
+import './App.css'; 
 
 const App = () => {
   const departments = [...new Set(events.map(event => event.department))];
 
   return (
     <div className="App">
-      <BubbleAnimation /> {/* Add the BubbleAnimation component here */}
+      <BubbleAnimation />
       {departments.map(department => (
         <Department 
           key={department}
