@@ -11,3 +11,6 @@
   display: flex;
   flex-wrap: wrap;
 }
+body{
+  background-color: #1f2834cc;
+}

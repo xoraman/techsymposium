@@ -1,0 +1,116 @@
+/* Navbar.css - Dark Blue Theme with 'TechSymposium' Text */
+.navbar-box {
+    background-color: #0a2540; /* Dark Blue */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between; /* Align the logo and links */
+    align-items: center;
+  }
+  
+  /* Styling for TechSymposium text */
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    padding-left: 20px; /* Add some padding to the left */
+    text-transform: uppercase; /* Make the text uppercase */
+  }
+  
+  .navbar-box:hover {
+    background-color: #0d355d; /* Slightly lighter dark blue on hover */
+  }
+  
+  .navbar-box ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20px; /* Add some padding to the right */
+  }
+  
+  .navbar-box ul li {
+    display: inline;
+    position: relative;
+  }
+  
+  .navbar-box ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    font-size: 18px;
+    padding: 10px 20px;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar-box ul li a:hover {
+    background-color: #1d4a75; /* Medium blue on hover */
+    border-radius: 5px;
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  .navbar-box ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #49a1ff; /* Light blue underline */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-box ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1); /* Sliding underline effect */
+  }
+  
+  .navbar-box ul li a.active {
+    background-color: #17191c; /* Light blue background for active link */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(73, 161, 255, 0.7); /* Light blue glow for active link */
+  }
+  
+  .navbar-box ul li a:focus {
+    outline: none;
+    background-color: #17191c; /* Light blue on focus */
+    box-shadow: 0 0 10px rgba(73, 161, 255, 0.9); /* Stronger glow on focus */
+  }
+  
+  /* Dropdown (optional) */
+  .navbar-box ul li:hover ul {
+    display: block;
+  }
+  
+  .navbar-box ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #0a2540;
+    padding: 10px;
+    list-style-type: none;
+    top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar-box ul li ul li {
+    margin-bottom: 5px;
+  }
+  
+  .navbar-box ul li ul li a {
+    padding: 10px 15px;
+    white-space: nowrap; /* Keep text in one line */
+  }
+  
+  .navbar-box ul li ul li a:hover {
+    background-color: #1d4a75; /* Hover effect for dropdown links */
+  }
+  

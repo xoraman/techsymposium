@@ -10,4 +10,51 @@
     max-width: 100%;
     border-radius: 8px;
   }
-  
+  /* EventCard.css */
+.event-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.event-card h3 {
+  font-size: 20px;
+  color: #0a2540; /* Dark blue */
+  margin: 15px 0 10px 0;
+}
+
+.event-card p {
+  font-size: 16px;
+  color: #555;
+  margin: 0 20px 15px 20px;
+}
+
+.event-card p:nth-of-type(2) {
+  font-weight: bold;
+  color: #0a2540; /* Dark blue */
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(80, 90, 128, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .event-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
