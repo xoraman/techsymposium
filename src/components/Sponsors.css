@@ -1,0 +1,32 @@
+/* Sponsors.css */
+.sponsors-container {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .sponsors-container h2 {
+    font-size: 28px;
+    color: #0a2540; /* Match your theme */
+    margin-bottom: 20px;
+  }
+  
+  .sponsor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .sponsor-logo {
+    margin: 15px;
+  }
+  
+  .sponsor-logo img {
+    max-width: 150px; /* Adjust logo size */
+    max-height: 100px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sponsor-logo img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  

@@ -1,0 +1,43 @@
+/* Department header styling */
+.department-header {
+  font-size: 24px;
+  background-color: #0a2540;  /* Dark blue */
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  border-radius: 8px;
+}
+
+.department-header:hover {
+  background-color: #49a1ff;  /* Light blue */
+}
+
+/* Collapsible department events */
+.department-events {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.department-events.show {
+  max-height: 1000px;  /* Arbitrarily large value for smooth expansion */
+  opacity: 1;
+}
+
+/* Event card hover effect */
+.event-card {
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
