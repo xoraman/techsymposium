@@ -14,6 +14,13 @@ const events = [
       description: 'A workshop on AI and Machine Learning.',
     },
     {
+      department: 'Computer Science',
+      name: 'AI Workshop',
+      image: 'path/to/image.jpg',
+      fee: 'Free',
+      description: 'A workshop on AI and Machine Learning.',
+    },
+    {
       department: 'Mechanical Engineering',
       name: 'Robotics Competition',
       image: 'path/to/image.jpg',

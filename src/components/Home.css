@@ -1,4 +1,8 @@
-/* Department header styling */
+*{
+  align-items: center;
+  justify-content: center;
+  margin-left: 30%;
+}
 .department-header {
   font-size: 24px;
   background-color: #0a2540;  /* Dark blue */
@@ -11,10 +15,8 @@
 }
 
 .department-header:hover {
-  background-color: #49a1ff;  /* Light blue */
+  background-color: #49a1ff; 
 }
-
-/* Collapsible department events */
 .department-events {
   max-height: 0;
   overflow: hidden;
@@ -23,11 +25,11 @@
 }
 
 .department-events.show {
-  max-height: 1000px;  /* Arbitrarily large value for smooth expansion */
+  max-height: 1500px;  
   opacity: 1;
 }
 
-/* Event card hover effect */
+
 .event-card {
   width: 300px;
   margin: 15px;
